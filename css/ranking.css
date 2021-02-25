@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 28px;
+  left: -30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.paw {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.tooltip {
+  background-color: rgba(255, 255, 255, 0.849);
+  word-wrap: normal;
+  overflow: hidden;
+  width: 120px;
+  position: absolute;
+  top: 17px;
+  left: -43px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 1000;
+}
+
+.tt1 {
+  color: #fff;
+  padding: 5px;
+}
+
+.lowRisk .tt1 {
+  background-color: var(--colorSafe);
+}
+
+.mediumRisk .tt1 {
+  background-color: var(--colorQuiteSafe);
+}
+
+.highRisk .tt1 {
+  background-color: var(--colorUnsafe);
+}
+
+.tt2 {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  padding: 5px;
+  font: 400 0.7rem "Segoe UI", sans-serif;
+  white-space: pre-wrap; 
+}
+
+.lowRisk > .tooltip {
+  border: 2px solid var(--colorSafe);
+}
+
+.mediumRisk > .tooltip {
+  border: 2px solid var(--colorQuiteSafe);
+}
+
+.highRisk > .tooltip {
+  border: 2px solid var(--colorUnsafe);
+}
+
+.marker:hover > .tooltip {
+  opacity: 1;
+  transition: 0.2s;
+}

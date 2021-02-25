@@ -1,0 +1,49 @@
+let active_tab_id = 0
+let injected = false
+
+// // Perform an action whenever the user activates a tab  
+// chrome.tabs.onActivated.addListener(tab => {
+//   // Get the current tab id
+//   console.log("onActivated")
+
+//   chrome.tabs.get(tab.tabId, currentTabInfo => {
+//     active_tab_id = tab.tabId
+//     // Check if it is a google url
+//     if (/^https:\/\/www\.google\.(?:co\.uk|com)\/search/.test(currentTabInfo.url)) {
+//       // Insert CSS and execute foreground script
+        
+//       chrome.tabs.insertCSS(null, { file: './ranking.css' })
+//       chrome.tabs.executeScript(null, { file: './foreground.js' }, () => console.log('i injected'))
+//     }
+//   })
+// })
+
+// chrome.tabs.onUpdated.addListener(tabId => {
+//   // Get the current tab id
+//   chrome.tabs.get(tabId, currentTabInfo => {
+//     console.log("onUpdated")
+//     // Check if it is a google url
+//     if (/^https:\/\/www\.google\.(?:co\.uk|com)\/search/.test(currentTabInfo.url)) {
+//       // Insert CSS and execute foreground script
+//       console.log("test2")
+//       if (!injected) chrome.tabs.insertCSS(null, { file: './ranking.css' })
+//       if (!injected) chrome.tabs.insertCSS(null, { file: './popup.css' })
+//       // chrome.tabs.insertCSS(null, { file: './popup.css' })  
+//       chrome.tabs.executeScript(null, { file: './foreground.js' }, () => console.log('run foreground'))
+//     }
+//   })
+// })
+
+// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+
+//   console.log(`Injected: ${injected}`)
+
+//   if (request.message === "injected?") {
+//     if (!injected) {
+//       sendResponse({ message: "run code" });
+//       injected = true;
+//     } else {
+//       sendResponse({ message: "don't run code" });
+//     }
+//   }
+// })

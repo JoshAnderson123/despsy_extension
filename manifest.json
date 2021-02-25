@@ -10,14 +10,25 @@
     "128": "./media/obj-128x128.png"
   },
   "background": {
-    "scripts": ["./background.js"]  
+    "scripts": ["scripts/background.js"]  
   },
-  "options_page": "./options.html",
+  "options_page": "html/options.html",
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "html/popup.html"
   },
   "web_accessible_resources": [
     "media/*"
   ],
-  "permissions": ["tabs", "https://www.google.com/*", "https://www.messenger.com/*"]
+  "content_scripts" : [
+    {
+      "js": ["scripts/ranking.js"],
+      "css": [
+        "css/ranking.css",
+        "css/popup.css",
+        "css/helpers.css"
+      ],
+      "matches": ["https://www.google.com/*", "https://www.google.co.uk/*"]
+    }
+  ],
+  "permissions": ["tabs"]
 }

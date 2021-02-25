@@ -22,6 +22,8 @@ function runForeground() {
   }
 }
 
+console.log("test2")
+
 runForeground();
 
 function addPaw(markerType) {
@@ -39,10 +41,26 @@ function addPaw(markerType) {
 }
 
 function addTooltip(marker, markerType) {
+  //// Create divs
   const tooltip = document.createElement("div");
-  tooltip.classList.add("tooltip");
-  if (markerType === "lowRisk") tooltip.innerHTML = "This website is safe"
-  else if (markerType === "mediumRisk") tooltip.innerHTML = "This website is quite safe"
-  else tooltip.innerHTML = "This website is not safe"
+  tooltip.classList.add("tooltip", "FSV");
+  const tt1 = document.createElement("div");
+  tt1.classList.add("tt1", "font-tt")
+  const tt2 = document.createElement("div");
+  tt2.classList.add("tt2")
+  
+  //// Add text to header
+  if (markerType === "lowRisk") tt1.innerHTML = "This website is safe"
+  else if (markerType === "mediumRisk") tt1.innerHTML = "This website is quite safe"
+  else tt1.innerHTML = "This website is not safe"
+
+  //// Add text to body
+  if (markerType === "lowRisk") tt2.innerHTML = "• Secure Link\r• Clear Privacy Policy"
+  else if (markerType === "mediumRisk") tt2.innerHTML = "• Secure Link\r• Unclear Privacy Policy"
+  else tt2.innerHTML = "• Unsecure Link\r• 3rd Party Cookies"
+  
+  //// Add to DOM
+  tooltip.appendChild(tt1);
+  tooltip.appendChild(tt2);
   marker.appendChild(tooltip);
 }
