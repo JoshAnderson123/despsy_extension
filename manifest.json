@@ -22,12 +22,13 @@
   "content_scripts" : [
     {
       "js": ["scripts/ranking.js"],
-      "css": [
-        "css/ranking.css",
-        "css/popup.css",
-        "css/helpers.css"
-      ],
+      "css": ["css/ranking.css","css/popup.css","css/helpers.css"],
       "matches": ["https://www.google.com/*", "https://www.google.co.uk/*"]
+    },
+    {
+      "js": ["scripts/warningPopup.js"],
+      "css": ["css/warningPopup.css","css/popup.css","css/helpers.css"],
+      "matches": ["https://www.messenger.com/*"]
     }
   ],
   "permissions": ["tabs"]

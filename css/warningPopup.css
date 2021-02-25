@@ -1,0 +1,109 @@
+.pw-1 {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pw-1-fade-out {
+  animation: fadeout-bg linear 0.5s both;
+}
+
+@keyframes fadeout-bg {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pw-2 {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+}
+
+.pw-2-fade-in {
+  animation: fadein-cont linear 0.5s none;
+}
+
+.pw-2-fade-out {
+  animation: fadeout-cont linear 0.5s none;
+}
+
+@keyframes fadein-cont {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout-cont {
+  0% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+.pw-3 {
+  height: 80px;
+  background-color: var(--colorUnsafe);
+  color: #fff;
+}
+
+.pw-4 {
+  padding: 20px;
+  color: rgb(24, 24, 24);
+}
+
+.pw-6 {
+  margin-left: 20px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+.pw-7 {
+  margin-top: 40px;
+  width: 200px;
+  height: 40px;
+  background-color: var(--colorUnsafe);
+  color: #fff;
+}
+
+.pw-8 {
+  height: 90px;
+  background-color: var(--colorUnsafe);
+  color: #fff;
+}
+
+.pw-9 {
+  height: 30px;
+}
+
+.pw-10 {
+  width: 30px;
+  height: 30px;
+}
+
+.pw-11 {
+  margin-left: 10px;
+}
+
+.pw-12 {
+  margin-top: 3px;
+}
+
+.pw-13 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #fff;
+}

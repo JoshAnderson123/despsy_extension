@@ -22,8 +22,6 @@ function runForeground() {
   }
 }
 
-console.log("test2")
-
 runForeground();
 
 function addPaw(markerType) {
