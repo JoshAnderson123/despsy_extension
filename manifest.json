@@ -1,0 +1,23 @@
+{
+  "name": "des-psy-pc ",
+  "description": "my extension",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "./media/obj-16x16.png",
+    "32": "./media/obj-32x32.png",
+    "48": "./media/obj-48x48.png",
+    "128": "./media/obj-128x128.png"
+  },
+  "background": {
+    "scripts": ["./background.js"]
+  },
+  "options_page": "./options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    "media/*"
+  ],
+  "permissions": ["tabs", "https://www.google.com/*"]
+}
