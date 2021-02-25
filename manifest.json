@@ -10,7 +10,7 @@
     "128": "./media/obj-128x128.png"
   },
   "background": {
-    "scripts": ["./background.js"]
+    "scripts": ["./background.js"]  
   },
   "options_page": "./options.html",
   "browser_action": {
@@ -19,5 +19,5 @@
   "web_accessible_resources": [
     "media/*"
   ],
-  "permissions": ["tabs", "https://www.google.com/*"]
+  "permissions": ["tabs", "https://www.google.com/*", "https://www.messenger.com/*"]
 }

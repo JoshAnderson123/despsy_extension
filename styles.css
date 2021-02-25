@@ -4,14 +4,11 @@
   margin: 0;
 }
 
-.test {
-  background-color: rgb(86, 255, 176);
-}
+/*////// RANKING //////*/
 
 .marker {
-  background-color: rgb(236, 106, 0);
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 28px;
   left: -30px;
@@ -20,29 +17,10 @@
 }
 
 .paw {
-  /* background-color: rgb(192, 55, 226); */
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 28px;
-  left: -30px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   object-fit: contain;
-}
-
-.lowRisk {
-  background-color: rgb(112, 255, 136);
-  border: 1px solid rgb(35, 185, 60);
-}
-
-.mediumRisk {
-  background-color: rgb(253, 255, 119);
-  border: 1px solid rgb(177, 163, 39);
-}
-
-.highRisk {
-  background-color: rgb(255, 137, 137);
-  border: 1px solid rgb(189, 50, 50);
 }
 
 .tooltip {
@@ -78,6 +56,9 @@
   opacity: 1;
   transition: 0.2s;
 }
+
+
+/*////// MAIN POPUP //////*/
 
 .popup-container {
   width: 400px;
