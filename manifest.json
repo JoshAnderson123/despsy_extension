@@ -26,7 +26,7 @@
     {
       "js": ["scripts/warningPopup.js"],
       "css": ["css/warningPopup.css", "css/popup.css", "css/helpers.css"],
-      "matches": ["https://www.messenger.com/*"]
+      "matches": ["https://www.freeonlinegames.com/*"]
     }
   ],
   "permissions": ["tabs"]

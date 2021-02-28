@@ -33,6 +33,7 @@ function runForeground() {
   const pw7a = document.createElement('div');
   pw7a.classList.add('pw-7', 'pw-7a', 'FC', 'ptr');
   pw7a.innerHTML = 'Go back'
+  pw7a.onclick = () => chrome.runtime.sendMessage({message: "go back"})
   pw7c.appendChild(pw7a);
 
   const pw7 = document.createElement('div');

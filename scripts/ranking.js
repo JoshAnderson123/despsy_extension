@@ -9,8 +9,17 @@ function runForeground() {
   }
 
   // Add new markers
-  const searchResults = document.querySelectorAll(".yuRUbf")
+  const searchResults = document.querySelectorAll(".yuRUbf, .nDgy9d")
   for (result of searchResults) {
+
+    // console.log(result.classList[0])
+    let linkType = 'yuRUbf'
+
+    if(result.classList[0] === 'nDgy9d') {
+      linkType = 'nDgy9d'
+      result.classList.add('rel', 'ov-v')
+      result.parentNode.classList.add('ov-v')
+    }
 
     const markerChoice = Math.random();
     let markerType;
@@ -19,9 +28,10 @@ function runForeground() {
     // else markerType = "highRisk"
 
     const linkText = result.childNodes[1]?.childNodes[0]?.childNodes[0]
-    if (/www\.messenger\.(?:co\.uk|com)/.test(linkText?.innerHTML)) markerType = "highRisk"
+    // if (/www\.messenger\.(?:co\.uk|com)/.test(linkText?.innerHTML)) markerType = "highRisk"
+    if (/www\.freeonlinegames\.com/.test(linkText?.innerHTML)) markerType = "highRisk"
 
-    const marker = addMarker(markerType)
+    const marker = addMarker(markerType, linkType)
     addTooltip(marker, markerType);
     result.appendChild(marker);
   }
@@ -31,10 +41,11 @@ function runForeground() {
 
   //// HELPER FUNCTIONS ////
 
-  function addMarker(markerType) {
+  function addMarker(markerType, linkType) {
 
     const marker = document.createElement("div")
     marker.classList.add(markerType, "marker");
+    if (linkType === 'nDgy9d') marker.classList.add('nDgy9d');
     marker.addEventListener("mouseenter", () => {
       hovering = true;
       marker.childNodes[1].classList.remove('ptrNone')

@@ -206,3 +206,7 @@
 .ov-h {
   overflow: hidden;
 }
+
+.ov-v {
+  overflow: visible !important;
+}
