@@ -69,12 +69,19 @@
   white-space: pre-wrap;
 }
 
-.pw-7 {
+.pw-7c {
   margin-top: 40px;
-  width: 200px;
-  height: 40px;
+}
+
+.pw-7 {
+  padding: 10px 15px;
   background-color: var(--colorUnsafe);
   color: #fff;
+}
+
+.pw-7a {
+  background-color: var(--colorSafe);
+  margin-right: 5px;
 }
 
 .pw-8 {

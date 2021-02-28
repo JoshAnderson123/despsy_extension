@@ -6,6 +6,8 @@
   --colorSafe: #1B9B00;
   --colorQuiteSafe: #e6cb00;
   --colorUnsafe: #ff1919;
+  /* --colorTheme: rgb(0, 110, 255); */
+  --colorTheme: #007cc2;
 }
 
 * {
@@ -50,6 +52,14 @@
   background-color: var(--colorLight);
 }
 
+.c-w {
+  color: #fff;
+}
+
+.bc-w {
+  background-color: #fff;
+}
+
 .grad {
   background: linear-gradient(90deg, var(--blue1) 0%, var(--blue2) 100%)
 }
@@ -62,9 +72,13 @@
   border-right: 1px solid rgba(255,255,255,0.3);
 }
 
+.bct {
+  background-color: var(--colorTheme);
+}
+
 .pm-cont {
   width: 350px;
-  height: 600px;
+  height: 550px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -95,11 +109,18 @@
 }
 
 .pm-4 {
-  height: 55px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  height: 35px;
+}
+
+.pm-4b {
+  padding-top: 20px;
+  height: 35px;
 }
 
 .pm-5 {
-  padding: 10px 5px;
+  padding: 10px 5px 20px 5px;
 }
 
 .pm-6 {
@@ -169,7 +190,7 @@
 }
 
 .pm-12 {
-  margin-top: 30px;
+  margin-top: 20px;
   height: 180px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -200,6 +221,60 @@
 .pm-13-2:hover {
   opacity: 0.5;
 }
+
+
+.pm-n {
+  margin-top: 30px;
+  height: 220px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.pm-n2 {
+  height: 180px;
+  /* background-color: rgb(221, 255, 198); */
+}
+
+.pm-n3 {
+  /* background-color: rgb(190, 205, 255); */
+  border: 1px solid #bbb;
+  padding: 10px;
+}
+
+.pm-n4 {
+  margin-top: -2px;
+}
+
+.pm-n5 {
+  font: 400 1.1rem "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.pm-n6 {
+  margin-top: 35px;
+}
+
+.pm-n7 {
+
+}
+
+.pm-n8 {
+  width: 25px;
+  height: 50px;
+  /* background-color: #f00; */
+  margin-right: 5px;
+  object-fit: contain;
+}
+
+.pm-n8:last-child {
+  margin-right: 0;
+}
+
+
 
 .pm-z {
   height: 60px;

@@ -35,7 +35,7 @@
 }
 
 .font-tt {
-  font: 600 0.9rem "Segoe UI", sans-serif;
+  font: 600 0.95rem "Segoe UI", sans-serif;
 }
 
 .ta-l {
@@ -72,6 +72,8 @@
 }
 
 .full {
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   position: fixed;

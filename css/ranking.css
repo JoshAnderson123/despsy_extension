@@ -10,7 +10,7 @@
   position: absolute;
   top: 28px;
   left: -30px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   cursor: pointer;
 }
 
@@ -25,20 +25,23 @@
   background-color: rgba(255, 255, 255, 0.849);
   word-wrap: normal;
   overflow: hidden;
-  width: 120px;
+  width: 170px;
   position: absolute;
-  top: 17px;
+  top: 16px;
+  /* top: -10px; */
   left: -43px;
   border-radius: 5px;
-  pointer-events: none;
+  /* pointer-events: none; */
   opacity: 0;
   transition: 0.2s;
-  z-index: 1000;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 .tt1 {
   color: #fff;
   padding: 5px;
+  width: 100%;
 }
 
 .lowRisk .tt1 {
@@ -54,10 +57,11 @@
 }
 
 .tt2 {
+  width: 100%;
   background-color: rgb(255, 255, 255);
   color: #222;
-  padding: 5px;
-  font: 400 0.7rem "Segoe UI", sans-serif;
+  padding: 2px 5px 5px 8px;
+  font: 400 0.9rem "Segoe UI", sans-serif;
   white-space: pre-wrap; 
 }
 
@@ -76,4 +80,13 @@
 .marker:hover > .tooltip {
   opacity: 1;
   transition: 0.2s;
+}
+
+.tooltip:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.ptrNone {
+  pointer-events: none;
 }

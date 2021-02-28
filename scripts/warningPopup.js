@@ -26,10 +26,19 @@ function runForeground() {
   pw6.innerHTML = '• The link is not secured with HTTPS\r• There is no contact information\r• There is no privacy policy'
   pw4.appendChild(pw6);
 
+  const pw7c = document.createElement('div');
+  pw7c.classList.add('pw-7c', 'FC', 'w100');
+  pw4.appendChild(pw7c);
+
+  const pw7a = document.createElement('div');
+  pw7a.classList.add('pw-7', 'pw-7a', 'FC', 'ptr');
+  pw7a.innerHTML = 'Go back'
+  pw7c.appendChild(pw7a);
+
   const pw7 = document.createElement('div');
   pw7.classList.add('pw-7', 'FC', 'ptr');
   pw7.innerHTML = 'Go to site at your risk'
-  pw4.appendChild(pw7);
+  pw7c.appendChild(pw7);
 
   const pw8 = document.createElement('div');
   pw8.classList.add('pw-8', 'FC', 'font-title', 'w100', 'rig');

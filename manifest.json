@@ -10,24 +10,22 @@
     "128": "./media/obj-128x128.png"
   },
   "background": {
-    "scripts": ["scripts/background.js"]  
+    "scripts": ["scripts/background.js"]
   },
   "options_page": "html/options.html",
   "browser_action": {
-    "default_popup": "html/popup.html"
+    "default_popup": "html/popup3.html"
   },
-  "web_accessible_resources": [
-    "media/*"
-  ],
-  "content_scripts" : [
+  "web_accessible_resources": ["media/*"],
+  "content_scripts": [
     {
       "js": ["scripts/ranking.js"],
-      "css": ["css/ranking.css","css/popup.css","css/helpers.css"],
+      "css": ["css/ranking.css", "css/popup.css", "css/helpers.css", "css/cookiesPopup.css"],
       "matches": ["https://www.google.com/*", "https://www.google.co.uk/*"]
     },
     {
       "js": ["scripts/warningPopup.js"],
-      "css": ["css/warningPopup.css","css/popup.css","css/helpers.css"],
+      "css": ["css/warningPopup.css", "css/popup.css", "css/helpers.css"],
       "matches": ["https://www.messenger.com/*"]
     }
   ],
