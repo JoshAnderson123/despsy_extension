@@ -1,7 +1,7 @@
 # Surfer Buddy Chrome Extension Prototype
 ##### Y4 Design Psychology Group Project
 ##### Design Engineering, Imperial College London
-##### Designed By Bettina Sosa, Aisling Tai, Jingtong Ng, Josh Anderson
+##### Designed By Bettina Sosa, Josh Anderson, Aisling Tai, Jingtong Ng
 ##### Programmed by Josh Anderson
 
 ## How to Preview
