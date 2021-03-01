@@ -13,7 +13,7 @@ This chrome extension is a prototype, and is therefore not officially released o
 5. Activate extension
 
 
-## Preview Screenshot of 
+## Screenshots
 ![image](https://user-images.githubusercontent.com/23026627/109514744-43738e00-7a9e-11eb-95e8-c34f9f38f440.png)
 
 ![image](https://user-images.githubusercontent.com/23026627/109514949-7289ff80-7a9e-11eb-983a-98bbccccafd9.png)
