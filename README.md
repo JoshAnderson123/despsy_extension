@@ -11,3 +11,15 @@ This chrome extension is a prototype, and is therefore not officially released o
 3. Select Developer mode (top right of tab)
 4. Click load unpacked (top left of tab)
 5. Activate extension
+
+
+## Preview Screenshot of 
+![image](https://user-images.githubusercontent.com/23026627/109514744-43738e00-7a9e-11eb-95e8-c34f9f38f440.png)
+
+![image](https://user-images.githubusercontent.com/23026627/109514949-7289ff80-7a9e-11eb-983a-98bbccccafd9.png)
+
+![image](https://user-images.githubusercontent.com/23026627/109515053-92212800-7a9e-11eb-94ee-bbb759adcde6.png)
+
+![image](https://user-images.githubusercontent.com/23026627/109515011-846ba280-7a9e-11eb-83b5-ebdb0702f54b.png)
+
+
