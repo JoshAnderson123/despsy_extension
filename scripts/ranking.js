@@ -1,4 +1,9 @@
-function runForeground() {
+// Ranking.js - runs foreground ranking functionality on a given tab.
+//
+// Sites are curerrently ranked randomly for demonstration - this will be replaced
+// with ranking through privacy metric assesment as described in presentation.
+
+function runRanking() {
 
   let hovering = false;
 
@@ -136,7 +141,7 @@ function runForeground() {
   }
 }
 
-runForeground();
+runRanking();
 
 
 

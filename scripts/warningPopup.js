@@ -1,3 +1,7 @@
+// WarningPopup.js - creates a warning popup on unsafe ranked websites.
+//
+// Currently this is programmed to work only on the domain 'https://www.freeonlinegames.com/*' for demo purposes
+
 function runForeground() {
 
   const popupBackground = document.createElement('div');
