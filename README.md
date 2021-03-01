@@ -5,7 +5,7 @@
 ##### Programmed by Josh Anderson
 
 ## How to Preview
-This chrome extension is a prototype, and is therefore not officially released on the Google Chrome Extension store. To preview:
+This protoype is not officially released on the Google Chrome Extension store; To preview:
 1. Download this directory
 2. Open Chrome Extension Settings tab
 3. Select Developer mode (top right of tab)
