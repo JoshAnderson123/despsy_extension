@@ -4,6 +4,9 @@
 ##### Designed By Josh Anderson, Bettina Sosa, Aisling Tai, Jingtong Ng
 ##### Programmed by Josh Anderson
 
+## Background
+This protoype is designed to encourage safe browsing behaviour online for children aged 7-12. This is achieved by ranking websites in search engine results based on 6 privacy metrics. Websites are ranked from green (safe), to yellow, to red (unsafe). If a child hovers over a rating, a popup will explain how the website got its rating. Clicking on any of the bullet points will open an educational video popup for more information. Kids also have a dashboard where they can see how safely they are browsing the web, and a dog which they can customise. Finally, if a child tries to go on an unsafe website, a warning is displayed which gives the child the option to go back to the search results.
+
 ## How to Preview
 This protoype is not officially released on the Google Chrome Extension store; To preview:
 1. Download this directory
